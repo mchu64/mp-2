@@ -60,7 +60,7 @@ export default function DBZCharacters(props: { data: DBZcharacter[] }) {
             <SingleCharDiv saiyan={c.race === "Saiyan"} key={c.id}>
             <h1>{c.name}</h1>
             <p>{c.race}</p>
-            <strong>{c.ki}</strong>
+            <strong>Ki: {c.ki}</strong>
             <img src={c.image} alt={`image of ${c.name}`} />
             </SingleCharDiv>
         ))}
